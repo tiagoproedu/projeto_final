@@ -3,6 +3,11 @@
     width: 100%;
     background-color: #254F1A;
 }
+#mae{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
 header{
     display: flex;
     justify-content: center;
@@ -49,6 +54,42 @@ nav{
     background-color: #303541;
     color: #ffffff;
 }
-.principal h1{
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.principal{
+    display: flex;
+    gap: 5rem;
+}
+.conteudoHome{
+    width: 40rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.conteudoHome h1{
     color: #D2E823;
+    font-size: 4rem;
+    margin: 0;
+}
+.conteudoHome p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.miniForm{
+    display: flex;
+    flex-direction: row;
+}
+.imgHome{
+    width: 40rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
