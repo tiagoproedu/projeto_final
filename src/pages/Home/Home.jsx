@@ -24,7 +24,7 @@ function Home() {
                 <main>
                     <div className="principal">
                         <div className="conteudoHome">
-                            <div className="texto">
+                            <div>
                                 <h1>Tudo que você é. Em um simples link na bio.</h1>
                                 <p>Use o linktree no seu instagram, facebook, X, tiktok e muito mais.</p>
                             </div>
