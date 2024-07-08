@@ -1,0 +1,54 @@
+:root{
+    height: 100%;
+    width: 100%;
+    background-color: #254F1A;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 5rem;
+    width: 75%;
+    align-self: center;
+}
+.header h1{
+    margin-left: 2.5rem;
+}
+nav{
+    display: flex;
+    align-items: start;
+}
+.header ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+#buttons{
+    margin-right: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.login{
+    width: 6rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: large;
+}
+.signup{
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: large;
+    background-color: #303541;
+    color: #ffffff;
+}
+.principal h1{
+    color: #D2E823;
+}
