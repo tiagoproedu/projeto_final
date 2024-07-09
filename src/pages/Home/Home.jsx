@@ -6,7 +6,10 @@ function Home() {
             <div id="mae">
                 <header>
                     <div className="header">
-                        <h1>Linktree</h1>
+                        <div className="logo">
+                            <h1>Linktree</h1>
+                            <img src="src/assets/linktree.svg" alt="icon" />
+                        </div>
                         <nav>
                             <ul>
                                 <li>Sobre Nós</li>
@@ -29,7 +32,7 @@ function Home() {
                                 <p>Use o linktree no seu instagram, facebook, X, tiktok e muito mais.</p>
                             </div>
                             <div className="miniForm">
-                                <input type="text" name="username" id="username" />
+                                <input type="text" placeholder="username" name="username" id="username" />
                                 <button>Pegue seu Linktree</button>
                             </div>
                         </div>

@@ -1,8 +1,12 @@
-# React + Vite
+# Trabalho Final
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O trabalho consiste em fazer uma cópia do linktree mas
+fazendo o proprio CRUD e o proprio banco de dados.
 
-Currently, two official plugins are available:
+Na primeira semana(08/07 - 13/07) estarei implementando o Front-End, na segunda semana(15/07 - 20/07) estarei criando e implementando o Back-End e por último, na última semana(22/07 - 27/07) estarei implementando o Banco de dados.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Tecnologias usadas:
+    - Front:
+        - React
+        - Bootstrap
+        - Vite

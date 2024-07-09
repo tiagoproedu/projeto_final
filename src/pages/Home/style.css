@@ -2,6 +2,7 @@
     height: 100%;
     width: 100%;
     background-color: #254F1A;
+    font-family: Montserrat;
 }
 #mae{
     display: flex;
@@ -24,6 +25,9 @@ header{
 .header h1{
     margin-left: 2.5rem;
 }
+.logo{
+    display: flex;
+}
 nav{
     display: flex;
     align-items: start;
@@ -40,18 +44,18 @@ nav{
 }
 .login{
     width: 6rem;
-    height: 3rem;
+    height: 3.5rem;
     border: none;
     border-radius: 0.3rem;
     font-size: large;
 }
 .signup{
     width: 8rem;
-    height: 3rem;
+    height: 3.5rem;
     border: none;
     border-radius: 2rem;
     font-size: large;
-    background-color: #303541;
+    background-color: #1E2330;
     color: #ffffff;
 }
 main{
@@ -64,7 +68,7 @@ main{
     gap: 5rem;
 }
 .conteudoHome{
-    width: 40rem;
+    width: 33rem;
     height: 40rem;
     display: flex;
     flex-direction: column;
@@ -72,22 +76,32 @@ main{
     align-items: start;
 
 }
-
 .conteudoHome h1{
     color: #D2E823;
     font-size: 4rem;
     margin: 0;
 }
 .conteudoHome p{
+    color: #D2E823;
     font-size: 1.2rem;
     font-weight: bold;
 }
 .miniForm{
     display: flex;
     flex-direction: row;
+    height: 3.5rem;
+    gap: 0.5rem;
+}
+.miniForm input, button{
+    border-radius: 1rem;
+    border: none;
+    width: 10rem;
+}
+.miniForm button{
+    background-color: #E3BAE4;
 }
 .imgHome{
-    width: 40rem;
+    width: 33rem;
     height: 40rem;
     display: flex;
     flex-direction: column;
