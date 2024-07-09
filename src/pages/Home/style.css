@@ -1,17 +1,15 @@
-:root{
-    height: 100%;
-    width: 100%;
-    background-color: #254F1A;
+body{
     font-family: Montserrat;
-}
-#mae{
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    background-color: #254F1A;
+    gap: 4rem;
+    width: 100%;
 }
 header{
     display: flex;
     justify-content: center;
+    height: 7rem;
 }
 .header{
     display: flex;
@@ -20,24 +18,23 @@ header{
     background-color: #ffffff;
     border-radius: 5rem;
     width: 75%;
+    height: 65%;
     align-self: center;
 }
 .header h1{
     margin-left: 2.5rem;
+    margin-bottom: 0;
 }
 .logo{
     display: flex;
 }
-nav{
-    display: flex;
-    align-items: start;
-}
-.header ul{
+header ul{
     list-style: none;
     display: flex;
     gap: 2rem;
+    margin: 0;
 }
-#buttons{
+.buttons{
     margin-right: 1rem;
     display: flex;
     gap: 1rem;
@@ -62,18 +59,18 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 4rem;
 }
 .principal{
     display: flex;
     gap: 5rem;
 }
 .conteudoHome{
-    width: 33rem;
+    width: 30rem;
     height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
 
 }
 .conteudoHome h1{
@@ -101,9 +98,45 @@ main{
     background-color: #E3BAE4;
 }
 .imgHome{
-    width: 33rem;
+    width: 30rem;
     height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.questions{
+    background-color: #780016;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.questions h2{
+    text-align: center;
+    color: #E9C0E9;
+    margin: 0;
+}
+.conteudoQuestions{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 40vw;
+    height: 60vh;
+}
+footer{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-around;
+    background-color: #ffffff;
+    width: 100%;
+    height: 4.5rem;
+    align-self: center;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    margin: 0;
 }
