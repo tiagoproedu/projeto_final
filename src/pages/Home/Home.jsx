@@ -13,9 +13,9 @@ function Home() {
                     </div>
                     <nav>
                         <ul>
-                            <li>Sobre Nós</li>
-                            <li>Dúvidas</li>
-                            <li>Contatos</li>
+                            <li><a href="#sobrenos">Sobre Nós</a></li>
+                            <li><a href="#duvidas">Dúvidas</a></li>
+                            <li><a href="#contatos">Contatos</a></li>
                         </ul>
                     </nav>
                     <div className="buttons">
@@ -26,27 +26,31 @@ function Home() {
             </header>
 
             <main>
-                <div className="principal">
-                    <div className="conteudoHome">
-                        <div>
-                            <h1>Tudo que você é. Em um simples link na bio.</h1>
-                            <p>Use o linktree no seu instagram, facebook, X, tiktok e muito mais.</p>
+                <section id="sobrenos">
+                    <div className="principal">
+                        <div className="conteudoHome">
+                            <div>
+                                <h1>Tudo que você é. Em um simples link na bio.</h1>
+                                <p>Use o linktree no seu instagram, facebook, X, tiktok e muito mais.</p>
+                            </div>
+                            <div className="miniForm">
+                                <input type="text" placeholder="username" name="username" id="username" />
+                                <button>Pegue seu Linktree</button>
+                            </div>
                         </div>
-                        <div className="miniForm">
-                            <input type="text" placeholder="username" name="username" id="username" />
-                            <button>Pegue seu Linktree</button>
+                        <div id="imgHome">
+                            <img src="src\assets\home.png" alt="imgHome" />
                         </div>
                     </div>
-                    <div id="imgHome">
-                        <img src="src\assets\home.png" alt="" />
+                </section>
+                <section id="duvidas">
+                    <div className="questions">
+                        <div className="conteudoQuestions">
+                            <h2>Dúvidas Frequentes</h2>
+                            <Duvidas />
+                        </div>
                     </div>
-                </div>
-                <div className="questions">
-                    <div className="conteudoQuestions">
-                        <h2>Dúvidas Frequentes</h2>
-                        <Duvidas />
-                    </div>
-                </div>
+                </section>
             </main>
 
             <footer>
@@ -54,14 +58,16 @@ function Home() {
                     <button className="login">Log in</button>
                     <button className="signup">Sign Up</button>
                 </div>
-                <div className="socialMedias">
-                    <ul>
-                        <li>Instagram</li>
-                        <li>Facebook</li>
-                        <li>X</li>
-                        <li>TikTok</li>
-                    </ul>
-                </div>
+                <section id="contatos">
+                    <div className="socialMedias">
+                        <ul>
+                            <li><a href="https://www.instagram.com/linktr.ee/">Instagram</a></li>
+                            <li><a href="https://www.facebook.com/LinktreeBrasil">Facebook</a></li>
+                            <li><a href="https://x.com/linktreebrasil">X</a></li>
+                            <li><a href="https://tiktok.com/@linktr.ee">Tiktok</a></li>
+                        </ul>
+                    </div>
+                </section>
             </footer>
         </>
     );

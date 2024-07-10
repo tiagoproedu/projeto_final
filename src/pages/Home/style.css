@@ -67,7 +67,7 @@ main{
 }
 .conteudoHome{
     width: 30rem;
-    height: 40rem;
+    height: 50rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,27 +99,34 @@ main{
 }
 .imgHome{
     width: 30rem;
-    height: 40rem;
+    height: 50rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+#duvidas{
+    width: 100%;
+    height: 100vh;
 }
 .questions{
     background-color: #780016;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .questions h2{
     text-align: center;
+    font-size: 3rem;
     color: #E9C0E9;
     margin: 0;
 }
 .conteudoQuestions{
     display: flex;
     flex-direction: column;
+    margin-top: 3rem;
     gap: 2rem;
     width: 40vw;
     height: 60vh;
@@ -139,4 +146,8 @@ footer ul{
     display: flex;
     gap: 3rem;
     margin: 0;
+}
+footer a{
+    text-decoration: none;
+    color: #1E2330;
 }
