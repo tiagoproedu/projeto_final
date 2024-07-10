@@ -21,13 +21,6 @@ header{
     height: 65%;
     align-self: center;
 }
-.header h1{
-    margin-left: 2.5rem;
-    margin-bottom: 0;
-}
-.logo{
-    display: flex;
-}
 header ul{
     list-style: none;
     display: flex;
@@ -147,7 +140,7 @@ footer ul{
     gap: 3rem;
     margin: 0;
 }
-footer a{
+a{
     text-decoration: none;
     color: #1E2330;
 }

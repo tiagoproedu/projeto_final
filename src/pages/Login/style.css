@@ -1,0 +1,35 @@
+.telaLogin{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+.metadeForm{
+    width: 48vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+}
+#logo{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.mensagem{
+    font-weight: bold;
+}
+#infoLogin{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,16 +1,14 @@
 import Duvidas from "../../components/Duvidas";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./style.css"
+import Logo from "../../components/Logo/Logo";
 
 function Home() {
     return (
         <>
             <header>
                 <div className="header">
-                    <div className="logo">
-                        <h1>Linktree</h1>
-                        <img src="src/assets/linktree.svg" alt="icon" />
-                    </div>
+                    <Logo />
                     <nav>
                         <ul>
                             <li><a href="#sobrenos">Sobre Nós</a></li>
@@ -19,7 +17,7 @@ function Home() {
                         </ul>
                     </nav>
                     <div className="buttons">
-                        <button className="login">Log in</button>
+                        <button className="login"><a href="login">Log in</a></button>
                         <button className="signup">Sign Up</button>
                     </div>
                 </div>
