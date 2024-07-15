@@ -12,28 +12,30 @@ function Admin() {
                         <button>Configurações</button>
                     </div>
                     <div className="userButton">
-                        <div><button>Usuário</button></div>
+                        <button>Usuário</button>
                     </div>
                 </div>
 
                 <div id="main">
-                    <div>
-                        <button>Adicionar link</button>
+                    <div className="linksMain">
+                        <button>+ Adicionar link</button>
                         <div className="cardLink">
-                            <div>
-                                <h1>titulo</h1>
-                                <a href="">link</a>
+                            <div className="cardLinkUp">
                                 <div>
+                                    <p>titulo</p>
+                                    <a href="">link</a>
+                                </div>
+                                <div className="cardShare">
                                     <p>compartilhar</p>
                                     <p>button on/off</p>
                                 </div>
                             </div>
-                            <div>
+                            <div className="cardLinkDown">
                                 <div className="icones">
-
+                                    <p>icones</p>
                                 </div>
                                 <div className="lixeira">
-
+                                    <p>lixeira</p>
                                 </div>
                             </div>
                         </div>

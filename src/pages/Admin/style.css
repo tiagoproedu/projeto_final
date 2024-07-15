@@ -1,39 +1,89 @@
 #admin{
-    background-color: white;
+    background-color: #F3F3F1;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
+    ". . . . . . . ." 
     "aside . main main main . viewer viewer"
     "aside . main main main . viewer viewer"
     "aside . main main main . viewer viewer"
-    "aside . main main main . viewer viewer";
+    "aside . main main main . viewer viewer"
+    ". . . . . . . .";
     height: 100vh;
 }
 #aside{
     grid-area: aside;
-    border: solid;
-    width: 15rem;
+    width: 17rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 24rem;
+    gap: 14rem;
+    background-color: white;
+    border-radius: 2rem;
 }
 .linkButtons{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
+    margin-top: 2rem;
 }
 .linkButtons button{
-    width: 100%;
+    width: 90%;
+    height: 3rem;
+    font-weight: bold;
+}
+.userButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .userButton button{
-    width: 100%;
+    width: 90%;
+    height: 3rem;
+    font-weight: bold;
 }
 #main{
     grid-area: main;
-    border: solid;
     width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.linksMain{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+#main button{
+    width: 35rem;
+    height: 3rem;
+    border-radius: 2rem;
+    background-color: #8129d9;
+    color: white;
+    font-weight: bold   ;
+}
+.cardLink{
+    width: 35rem;
+    border-radius: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.cardLinkUp{
+    display: flex;
+    gap: 20rem;
+}
+.cardShare{
+    display: flex;
+    gap: 2rem;
+}
+.cardLinkDown{
+    display: flex;
+    gap: 25rem;
 }
 #viewer{
     grid-area: viewer;
-    border: solid;
-    width: 30rem;
+    width: 28rem;
 }
