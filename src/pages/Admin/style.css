@@ -1,0 +1,39 @@
+#admin{
+    background-color: white;
+    display: grid;
+    grid-template-areas: 
+    "aside . main main main . viewer viewer"
+    "aside . main main main . viewer viewer"
+    "aside . main main main . viewer viewer"
+    "aside . main main main . viewer viewer";
+    height: 100vh;
+}
+#aside{
+    grid-area: aside;
+    border: solid;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 24rem;
+}
+.linkButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.linkButtons button{
+    width: 100%;
+}
+.userButton button{
+    width: 100%;
+}
+#main{
+    grid-area: main;
+    border: solid;
+    width: 40rem;
+}
+#viewer{
+    grid-area: viewer;
+    border: solid;
+    width: 30rem;
+}
