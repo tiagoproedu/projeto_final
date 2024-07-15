@@ -19,7 +19,7 @@ function Login() {
                                 <input type="password" placeholder="Senha" name="password" id="password" />
                             </form>
                             <a href="">Log in com o número de celular</a>
-                            <button>Log in</button>
+                            <button><a href="admin">Log in</a></button>
                             <div className="esqueceu">
                                 <a href="" className="senha">Esqueceu a senha?</a>
                                 <a href="" className="usuario">Esqueceu o usuario?</a>
