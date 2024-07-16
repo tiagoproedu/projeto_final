@@ -14,12 +14,12 @@ function Login() {
                             <p>Faça login no seu linktree!</p>
                         </div>
                         <div id="infoLogin">
-                            <form action="">
-                                <input type="text" placeholder="Username" name="username" id="username" />
+                            <form method="post" action="/admin">
+                                <input type="text" placeholder="Username" name="email" id="username" />
                                 <input type="password" placeholder="Senha" name="password" id="password" />
+                                <button type="submit">Log in</button>
                             </form>
                             <a href="">Log in com o número de celular</a>
-                            <button><a href="admin">Log in</a></button>
                             <div className="esqueceu">
                                 <a href="" className="senha">Esqueceu a senha?</a>
                                 <a href="" className="usuario">Esqueceu o usuario?</a>
