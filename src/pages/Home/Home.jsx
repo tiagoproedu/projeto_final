@@ -18,7 +18,7 @@ function Home() {
                     </nav>
                     <div className="buttons">
                         <button className="login"><a href="login">Log in</a></button>
-                        <button className="signup">Sign Up</button>
+                        <button className="signup"><a href="cadastro">Sign Up</a></button>
                     </div>
                 </div>
             </header>

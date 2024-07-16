@@ -25,7 +25,7 @@ function Login() {
                                 <a href="" className="usuario">Esqueceu o usuario?</a>
                             </div>
                             <div className="semConta">
-                                <a href="">Ainda não tem uma conta?</a>
+                                <a href="/cadastro">Ainda não tem uma conta?</a>
                             </div>
                         </div>
                     </div>

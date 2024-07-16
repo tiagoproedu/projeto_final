@@ -48,6 +48,9 @@ header ul{
     background-color: #1E2330;
     color: #ffffff;
 }
+.signup a{
+    color: #ffffff;
+}
 main{
     display: flex;
     flex-direction: column;
