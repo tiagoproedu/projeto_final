@@ -1,15 +1,17 @@
-body{
+body {
     font-family: Montserrat;
     display: flex;
     flex-direction: column;
     background-color: #254F1A;
 }
-header{
+
+header {
     display: flex;
     justify-content: center;
     height: 7rem;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,25 +21,29 @@ header{
     height: 65%;
     align-self: center;
 }
-header ul{
+
+header ul {
     list-style: none;
     display: flex;
     gap: 2rem;
     margin: 0;
 }
-.buttons{
+
+.buttons {
     margin-right: 1rem;
     display: flex;
     gap: 1rem;
 }
-.login{
+
+.login {
     width: 6rem;
     height: 3.5rem;
     border: none;
     border-radius: 2rem;
     font-size: large;
 }
-.signup{
+
+.signup {
     width: 8rem;
     height: 3.5rem;
     border: none;
@@ -47,59 +53,72 @@ header ul{
     color: #ffffff;
     transition: 0.3s;
 }
-.signup:hover{
+
+.signup:hover {
     filter: brightness(150%);
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4rem;
 }
-.principal{
+
+.principal {
     display: flex;
-    gap: 5rem;
+    justify-content: space-around;
 }
-.conteudoHome{
-    width: 30rem;
+
+.conteudoHome {
+    width: 40rem;
     height: 50rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.conteudoHome h1{
+
+.conteudoHome h1 {
     color: #ffffff;
     font-size: 4rem;
     font-weight: bold;
     margin: 0;
 }
-.conteudoHome p{
+
+.conteudoHome p {
     color: #ffffff;
     font-size: 1.2rem;
 }
-.miniForm{
+
+.miniForm {
     display: flex;
     flex-direction: row;
     height: 3.5rem;
     gap: 0.5rem;
 }
-.miniForm input, button{
+
+.miniForm input,
+button {
     border-radius: 2rem;
     border: none;
 }
-.miniForm button{
+
+.miniForm button {
     background-color: #E3BAE4;
     width: 13rem;
     transition: 0.4s;
 }
-.miniForm button:hover{
-    box-shadow: 0rem 0rem 0.5rem 0.09rem rgba(227,186,228,1);
+
+.miniForm button:hover {
+    box-shadow: 0rem 0rem 0.5rem 0.09rem rgba(227, 186, 228, 1);
 }
-.miniForm input{
+
+.miniForm input {
     width: 22rem;
     padding: 1rem;
 }
-.imgHome{
+
+.imgHome {
     width: 30rem;
     height: 50rem;
     display: flex;
@@ -107,10 +126,12 @@ main{
     justify-content: center;
     align-items: center;
 }
-#duvidas{
+
+#duvidas {
     width: 100%;
 }
-.questions{
+
+.questions {
     background-color: #780016;
     width: 100%;
     height: 100vh;
@@ -118,13 +139,15 @@ main{
     flex-direction: column;
     align-items: center;
 }
-.questions h2{
+
+.questions h2 {
     text-align: center;
     font-size: 3rem;
     color: #E9C0E9;
     margin: 0;
 }
-.conteudoQuestions{
+
+.conteudoQuestions {
     display: flex;
     flex-direction: column;
     margin-top: 3rem;
@@ -132,10 +155,13 @@ main{
     width: 40vw;
     height: 60vh;
 }
-.conteudoQuestions, h2 {
+
+.conteudoQuestions,
+h2 {
     font-weight: bold;
 }
-footer{
+
+footer {
     display: flex;
     align-items: center;
     padding-right: 2rem;
@@ -144,13 +170,22 @@ footer{
     width: 100%;
     height: 4.5rem;
 }
-footer ul{
+
+footer ul {
     list-style: none;
     display: flex;
     gap: 3rem;
     margin: 0;
 }
-a{
+
+a {
     text-decoration: none;
     color: #1E2330;
+}
+
+@media (max-height: 768px) {
+    .principal img {
+        padding-top: 7.5rem;
+        width: 35rem;
+    }
 }
