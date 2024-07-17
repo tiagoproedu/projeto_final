@@ -1,8 +1,12 @@
+body {
+    background-color: white;
+}
+
 .telaLogin{
     display: flex;
-    background-color: white;
     width: 100%;
 }
+
 .metadeForm{
     width: 50%;
     display: flex;
@@ -10,11 +14,20 @@
     align-items: center;
     gap: 10rem;
 }
+
+.mensagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #logo{
     display: flex;
     justify-content: flex-start;
     width: 100%;
+    padding: 2rem;
 }
+
 .infos{
     display: flex;
     flex-direction: column;
@@ -22,32 +35,49 @@
     width: 30rem;
     gap: 2rem;
 }
-.mensagem{
-    font-weight: bold;
-}
+
 #infoLogin{
     display: flex;
     flex-direction: column;
     width: 30rem;
-    gap: 0.5rem;
+    gap: 1rem;
 }
+
+#infoLogin input {
+    border-radius: 2rem;
+    padding: 1rem;
+    border: 0.13rem solid;
+}
+
 form{
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
+
 form input{
     border-radius: 1rem;
     border: solid black;
     height: 3rem;
 }
+
 #infoLogin button{
-    width: 30rem;
-    height: 3rem;
+    height: 4rem;
     background-color: #8129d9;
-    color: white;
     font-weight: bold;
 }
+
+.esqueceu {
+    padding-top: 1rem;
+}
+
 #imgLogin img{
-    width: 48.2rem;
+    height: 100vh;
+    object-fit: cover;
+}
+
+@media (max-height: 768px) {
+    .metadeForm{
+        gap: 3rem;
+    }
 }

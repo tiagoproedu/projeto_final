@@ -18,11 +18,11 @@ function Login() {
                                 <input type="text" placeholder="Username" name="username" id="username" />
                                 <input type="password" placeholder="Senha" name="password" id="password" />
                             </form>
-                            <a href="">Log in com o número de celular</a>
+                            <a href="">Logar com o número de celular</a>
                             <button><a href="admin">Log in</a></button>
                             <div className="esqueceu">
                                 <a href="" className="senha">Esqueceu a senha?</a>
-                                <a href="" className="usuario">Esqueceu o usuario?</a>
+                                <a href="" className="usuario"> Esqueceu o usuario?</a>
                             </div>
                             <div className="semConta">
                                 <a href="">Ainda não tem uma conta?</a>

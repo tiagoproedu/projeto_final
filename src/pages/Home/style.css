@@ -5,6 +5,10 @@ body {
     background-color: #254F1A;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     justify-content: center;
