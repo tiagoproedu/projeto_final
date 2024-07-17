@@ -3,8 +3,6 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #254F1A;
-    gap: 4rem;
-    width: 100%;
 }
 header{
     display: flex;
@@ -36,7 +34,7 @@ header ul{
     width: 6rem;
     height: 3.5rem;
     border: none;
-    border-radius: 0.3rem;
+    border-radius: 2rem;
     font-size: large;
 }
 .signup{
@@ -47,6 +45,10 @@ header ul{
     font-size: large;
     background-color: #1E2330;
     color: #ffffff;
+    transition: 0.3s;
+}
+.signup:hover{
+    filter: brightness(150%);
 }
 main{
     display: flex;
@@ -64,17 +66,16 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 .conteudoHome h1{
-    color: #D2E823;
+    color: #ffffff;
     font-size: 4rem;
+    font-weight: bold;
     margin: 0;
 }
 .conteudoHome p{
-    color: #D2E823;
+    color: #ffffff;
     font-size: 1.2rem;
-    font-weight: bold;
 }
 .miniForm{
     display: flex;
@@ -83,12 +84,20 @@ main{
     gap: 0.5rem;
 }
 .miniForm input, button{
-    border-radius: 1rem;
+    border-radius: 2rem;
     border: none;
-    width: 10rem;
 }
 .miniForm button{
     background-color: #E3BAE4;
+    width: 13rem;
+    transition: 0.4s;
+}
+.miniForm button:hover{
+    box-shadow: 0rem 0rem 0.5rem 0.09rem rgba(227,186,228,1);
+}
+.miniForm input{
+    width: 22rem;
+    padding: 1rem;
 }
 .imgHome{
     width: 30rem;
@@ -100,7 +109,6 @@ main{
 }
 #duvidas{
     width: 100%;
-    height: 100vh;
 }
 .questions{
     background-color: #780016;
@@ -124,15 +132,17 @@ main{
     width: 40vw;
     height: 60vh;
 }
+.conteudoQuestions, h2 {
+    font-weight: bold;
+}
 footer{
     display: flex;
     align-items: center;
-    gap: 2rem;
-    justify-content: space-around;
+    padding-right: 2rem;
+    justify-content: right;
     background-color: #ffffff;
     width: 100%;
     height: 4.5rem;
-    align-self: center;
 }
 footer ul{
     list-style: none;

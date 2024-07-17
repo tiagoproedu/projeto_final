@@ -32,8 +32,8 @@ function Home() {
                                 <p>Use o linktree no seu instagram, facebook, X, tiktok e muito mais.</p>
                             </div>
                             <div className="miniForm">
-                                <input type="text" placeholder="username" name="username" id="username" />
-                                <button>Pegue seu Linktree</button>
+                                <input type="text" placeholder="Nome de Usuário" name="username" id="username" />
+                                <button>Crie seu Linktree</button>
                             </div>
                         </div>
                         <div id="imgHome">
@@ -52,10 +52,6 @@ function Home() {
             </main>
 
             <footer>
-                <div className="buttons">
-                    <button className="login">Log in</button>
-                    <button className="signup">Sign Up</button>
-                </div>
                 <section id="contatos">
                     <div className="socialMedias">
                         <ul>
