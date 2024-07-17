@@ -14,8 +14,9 @@ function Cadastro() {
                         </div>
                         <div id="infoLogin">
                             <form method="post" action="/admin">
+                                <input type="text" placeholder="Name" name="name" id="name"/>
                                 <input type="text" placeholder="Username" name="username" id="username"/>
-                                <input type="text" placeholder="Email" name="email" id="email" />
+                                <input type="email" placeholder="Email" name="email" id="email" />
                                 <input type="password" placeholder="Senha" name="password" id="password" />
                                 <button type="submit">Cadastrar-se</button>
                             </form>
