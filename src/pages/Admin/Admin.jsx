@@ -1,6 +1,70 @@
+import { useRef } from "react";
+
 import "./style.css";
 
+const tcpip = "http://localhost:8080";
+
 function Admin() {
+  const titleRef = useRef("");
+  const urlRef = useRef("");
+  const publicRef = useRef("");
+
+  async function handleSubmitPost(event) {
+    event.preventDefault();
+
+    const title = titleRef.current.value;
+    const url = urlRef.current.value;
+    const publicBoolean = publicRef.current.value;
+
+    try {
+      const response = await fetch(`${tcpip}/api/v1/users`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          // token
+        },
+        body: JSON.stringify({
+          title: title,
+          url: url,
+          public: publicBoolean,
+        }),
+      });
+      console.log(response);
+    } catch (error) {
+      console.log(error);
+      alert("Alguma coisa deu errado");
+    }
+  }
+
+  async function handleSubmitPut(event) {
+    event.preventDefault();
+
+    const title = titleRef.current.value;
+    const url = urlRef.current.value;
+    const publicBoolean = publicRef.current.value;
+
+    try {
+      const response = await fetch(`${tcpip}/api/v1/users`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          // token
+        },
+        body: JSON.stringify({
+          title: title,
+          url: url,
+          public: publicBoolean,
+        }),
+      });
+      console.log(response);
+    } catch (error) {
+      console.log(error);
+      alert("Alguma coisa deu errado");
+    }
+  }
+
+  // TODO form para link
+  // TODO fetch para os links já criados
   return (
     <>
       <div id="admin">

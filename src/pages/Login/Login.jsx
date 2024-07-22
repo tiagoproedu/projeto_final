@@ -1,6 +1,38 @@
+import { useRef } from "react";
+
 import Logo from "../../components/Logo/Logo";
 import "./style.css";
+
+const tcpip = "http://localhost:8080";
+
 function Login() {
+  const emailRef = useRef("");
+  const passwordRef = useRef("");
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+
+    const email = emailRef.current.value;
+    const password = passwordRef.current.value;
+
+    try {
+      const response = await fetch(`${tcpip}/api/v1/auth/login`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email,
+          password: password,
+        }),
+      });
+      console.log(response);
+      // TODO armazenar token
+    } catch (error) {
+      console.log(error);
+      alert("Alguma coisa deu errado");
+    }
+  }
   return (
     <>
       <div className="telaLogin">
@@ -14,18 +46,20 @@ function Login() {
               <p>Faça login no seu linktree!</p>
             </div>
             <div id="infoLogin">
-              <form method="post" action="/admin">
+              <form onSubmit={handleSubmit}>
                 <input
                   type="text"
-                  placeholder="Username"
+                  placeholder="email"
                   name="email"
-                  id="username"
+                  id="email"
+                  ref={emailRef}
                 />
                 <input
                   type="password"
                   placeholder="Senha"
                   name="password"
                   id="password"
+                  ref={passwordRef}
                 />
                 <button type="submit">Log in</button>
               </form>
