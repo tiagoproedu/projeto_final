@@ -5,7 +5,6 @@ import Logo from "../../components/Logo/Logo";
 const tcpip = "http://localhost:8080";
 
 function Cadastro() {
-  const nameRef = useRef("");
   const usernameRef = useRef("");
   const emailRef = useRef("");
   const passwordRef = useRef("");
@@ -13,7 +12,6 @@ function Cadastro() {
   async function handleSubmit(event) {
     event.preventDefault();
 
-    const name = nameRef.current.value;
     const username = usernameRef.current.value;
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
@@ -25,7 +23,6 @@ function Cadastro() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          name: name,
           username: username,
           email: email,
           password: password,
@@ -51,13 +48,6 @@ function Cadastro() {
             </div>
             <div id="infoLogin">
               <form onSubmit={handleSubmit}>
-                <input
-                  type="text"
-                  placeholder="Name"
-                  name="name"
-                  id="name"
-                  ref={nameRef}
-                />
                 <input
                   type="text"
                   placeholder="Username"
