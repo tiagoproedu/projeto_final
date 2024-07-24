@@ -16,7 +16,7 @@ function Login() {
     const password = passwordRef.current.value;
 
     try {
-      const response = await fetch(`${tcpip}/api/v1/auth/login`, {
+      const response = await fetch(`${tcpip}/api/v1/auth`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -61,9 +61,9 @@ function Login() {
                   id="password"
                   ref={passwordRef}
                 />
+                <a href="">Log in com o número de celular</a>
                 <button type="submit">Log in</button>
               </form>
-              <a href="">Log in com o número de celular</a>
               <div className="esqueceu">
                 <a href="" className="senha">
                   Esqueceu a senha?
